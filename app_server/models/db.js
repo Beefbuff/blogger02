@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 var gracefulShutdown;
-var dbURI = 'mongodb://localhost/blogger/myblog';
+var dbURI = 'mongodb://blogs:password123@0.0.0.0:27017/blog';
 mongoose.connect(dbURI);
 
 // Monitor and report when database is connected                      
@@ -43,3 +43,5 @@ process.on('SIGTERM', function() {
     process.exit(0);
 }); });
   
+// bring in Schema
+require('./blogs');

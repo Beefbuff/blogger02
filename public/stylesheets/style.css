@@ -12,3 +12,11 @@ p {
   padding: 5%;
   font-size: 32px;
 }
+
+.card {
+  margin: 0 auto; 
+  float: none; 
+  margin-left: 5%;      
+  margin-right: 18%;
+  margin-bottom: 10px;
+}
